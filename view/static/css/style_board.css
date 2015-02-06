@@ -1,0 +1,232 @@
+@CHARSET "UTF-8";
+
+
+@import url(http://fonts.googleapis.com/earlyaccess/hanna.css);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600);
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+html {
+	margin: 0px;
+}
+
+body {
+	margin: 0px;
+	font-family: 'Hanna';
+	/*font-family: '맑은 고딕', 'Helvetica', 'Arial', 'lucida grande','tahoma','verdana','arial','sans-serif';*/
+	color: white;
+	/* 100% 배경  */
+	background: url("https://lh5.googleusercontent.com/-JkLWSMovm_g/VJfbR3CFrrI/AAAAAAAAARE/gyflv9w2Kks/s700-no/backImage_700.png") center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	/*-webkit-text-stroke: 1px;*/
+
+	-webkit-text-stroke: 1px rgba(142, 128, 113, 0.5);
+	-moz-text-stroke: 1px rgba(142, 128, 113, 0.5);
+	-ms-text-shadow : 1px 1px 1px rgba(142,128,113, 0.3);
+	-moz-text-shadow : 1px 1px 1px rgba(142,128,113, 0.3);
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	 
+}
+
+input {
+	color: #bdbab4;
+}
+
+/* 레이아웃 */
+/******************************************************/
+.container {
+	width: 1050px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+/* Commons */
+#table_board a {
+	text-decoration: none;
+}
+
+#board {
+	width: 100%;
+	float: left;
+	margin-top: 0px !important;
+	margin-bottom: 30px;
+}
+
+#table_board {
+	width: 100%;
+	border-radius: 15px;
+	border-spacing: 0px;
+	overflow: hidden;
+	font-size: 21px;
+	color: #8e8071;
+}
+
+#table_board th {
+	background-color: #b1a599;
+	color: white;
+	height: 25px;
+	font-size: 24px;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+	font-weight: 400;
+	padding: 10px;
+	padding-left: 15px;
+}
+
+#table_board tr td:nth-child(2), #table_board tfoot tr td {
+	text-align: left;
+	padding-left: 10px;
+}
+
+#table_board tbody td {
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+	border-left: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+#table_board tbody td:first-child {
+	border-left: 0px;
+}
+
+#table_board tfoot tr td {
+	/*background-color: #b1a599;*/
+	background-color: #efe8e2;
+	color: white;
+	height: 50px;
+	padding-left: 40px;
+}
+
+#table_board tfoot a {
+	color: black;
+}
+
+#table_board tfoot a:hover {
+	color: #0681ce;
+}
+
+}
+
+/* List */
+#table_board.list tbody a {
+	color: #8e8071;
+}
+
+#table_board.list tbody a:link {
+	color: #8e8071;
+}
+
+#table_board.list tbody a:visited {
+	color: #8e8071;
+}
+
+#table_board.list tbody a:hover {
+	color: #0681ce;
+}
+
+#table_board.list tbody a:active {
+	color: #8e8071;
+}
+
+#table_board.list tbody tr:hover * {
+	color: #0681ce !important;
+}
+
+/*  WriteFrom  */
+#table_board.writeForm input[type=text], #table_board.writeForm textarea,
+	#table_board.reply textarea {
+	width: 90%;
+	height: 100%;
+	float: left;
+	/* border: 0px; */
+	padding-left: 5px;
+	font-size: 1em;
+	font-family: 'Hanna', sans-serif;
+	color: black;
+	-webkit-text-stroke: 1px rgba(142, 128, 113, 0.3);
+}
+
+#table_board.writeForm tfoot input[type=submit], #table_board.writeForm input[type=button],
+	#table_board.reply input[type=button] {
+	text-align: center;
+	font-size: 1em;
+	font-family: 'Hanna', sans-serif;
+	width: 100px;
+	background-color: black;
+	height: 35px;
+	color: white;
+}
+
+/*  Read  */
+#table_board.read tbody tr td:nth-child(2) {
+	color: black;
+}
+
+/* Reply */
+#table_board.reply {
+	background-color: white;
+	width: 100%;
+	/* border : 1px solid #EFE8E2; */
+	margin-bottom: 20px;
+}
+
+#table_header {
+	width: 100%;
+	height: 25px;
+	background-color: /* #B1A599; */#EFE8E2;
+	color: black;
+	text-align: center;
+	font-size: 18px;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
+	font-weight: 400;
+	padding: 10px;
+	padding-left: 15px;
+}
+#table_contents{
+	padding: 25px;
+}
+
+#table_board.reply th {
+	background-color: #efe8e2;
+	border-top: 4px solid #ebc85e;
+	color: #8e8071;
+	padding: 30px;
+	border-bottom: 1px solid gray;
+}
+
+#table_board.reply textarea {
+	float: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	border: 1px solid gray;
+}
+
+#table_board.reply input[type=button] {
+	background-color: #b1a599;
+	margin-bottom: 15px;
+	font-size: 20px;
+}
+
+#table_board.reply tbody div:first-child {
+	float: left;
+	width: 90%;
+}
+
+#table_board.reply tbody div:nth-child(2) {
+	width: 10%;
+	font-size: 12px;
+	float: left;
+}
+
+#table_board.reply tbody span {
+	font-size: 14px;
+}
