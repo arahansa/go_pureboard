@@ -13,7 +13,7 @@ func main() {
 	r.HandleFunc("/board", handleBoard)
 	r.HandleFunc("/", handler)
 	http.Handle("/", r)
-	http.ListenAndServe(":8002", nil)
+	http.ListenAndServe(":8000", nil)
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
